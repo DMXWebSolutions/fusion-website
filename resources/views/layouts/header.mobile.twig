@@ -1,0 +1,27 @@
+<header class="header d-flex flex-column" >
+    <div class="small-header2 d-flex flex-nowrap flex-row justify-content-between align-items-center p-2">
+        <div class="menu d-flex flex-column">
+            <div class="menu-itens d-flex justify-content-end">
+                <span class="mini-social-icons position-relative" style="top: 5px">
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </span>
+            </div>
+        </div>
+        <a href="{{ path_for('home')}}" class="d-flex justify-content-center flex-grow-1">
+            <img src="../../../public/img/logo.png"style="position: relative; width: 60px; height: 60px; left: -12px;"/>
+        </a>
+        <span class="menu-button">
+            <button uk-toggle="target: #menu-button" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </span>
+    </div>
+    {% include 'layouts/slide.mobile.twig' %}
+</header>                    
+<div id="menu-button" uk-offcanvas>
+    <div class="uk-offcanvas-bar" style="background: #555; width: 200px;">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+    </div>
+</div>

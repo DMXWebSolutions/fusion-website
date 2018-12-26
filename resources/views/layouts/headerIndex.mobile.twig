@@ -1,0 +1,36 @@
+<header class="header d-flex flex-column " >
+    <div class="small-header d-flex flex-nowrap flex-row justify-content-between">
+        <div class="logo d-flex justify-content-center align-items-center flex-grow-1">
+            <a href="{{ path_for('home')}}">
+                <img src="../../../public/img/logo.png"/>
+            </a>
+        </div>
+        <div class="menu d-flex flex-column flex-grow-1">
+            <div class="menu-itens d-flex justify-content-end">
+                <span class="mini-social-icons position-relative" style="top: 5px">
+                    <a href=""><i class="far fa-envelope"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </span>
+                <span class="menu-button">
+                    <button uk-toggle="target: #menu-button" type="button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </span>
+            </div>
+            <span style="margin-bottom: 2px; margin-left: 15px;">RASTREAMENTO</span>
+            <form action="" method="post" class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+                <input type="text" placeholder="Login">
+                <input type="password" placeholder="Senha">
+                <button type="submit" class="btn btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+    {% include 'layouts/slide.mobile.twig' %}
+</header>    
+<div id="menu-button" uk-offcanvas>
+    <div class="uk-offcanvas-bar" style="background: #555; width: 200px;">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+    </div>
+</div>

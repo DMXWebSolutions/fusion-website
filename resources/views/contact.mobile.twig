@@ -1,0 +1,43 @@
+{% extends 'layouts/app.mobile.twig' %}
+
+{% block title %}Contato{% endblock %}
+
+{% block content %}
+
+<div class="mb-5">
+
+	<form method="POST" action="sendMail.php" class="mt-3">
+
+		<h1 class="text-title mt-3">Contato</h1>
+
+		<label class="mb-0">Nome</label>
+		<input type="text" name="name" class="form-control p-4" placeholder="Nome" required>
+
+		<div class="my-3">
+			<label class="mb-0">Email</label>
+			<input type="email" name="email" class="form-control p-4" placeholder="Email" required>
+		</div>
+
+		<div class="mb-4">
+			<label class="mb-0">Mensagem</label>
+			<textarea name="message" class="form-control p-4" placeholder="Mensagem" required></textarea>
+		</div>
+		
+		<input type="submit" name="send" value="Enviar" class="mb-3 btn btn-warning weight-500">
+
+	</form>
+
+	<address class="mb-0">
+		<i class="fa fa-map-marker-alt"></i> Lorem Ipsum Place and Street
+	</address>
+
+	<div class="d-block my-2">
+		<i class="fa fa-phone"></i>	<a href="tel:" class="text-dark">(21) 99999-9999</a>
+	</div>
+	<div class="d-block">
+		<i class="fa fa-envelope"></i> <a href="mailto:" class="text-dark">company@domain.com</a>
+	</div>
+
+</div>
+
+{% endblock %}

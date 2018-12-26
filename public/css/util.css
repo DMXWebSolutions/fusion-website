@@ -1,0 +1,32 @@
+
+.text-title {
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(214, 186, 29);
+    color: #333;
+}
+
+.text-subtitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.text-content {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+
+
+/* FONT-SIZE */
+.fs-28 { font-size: 28px; }
+
+
+/* MARGIN */
+.ml--30 { margin-left: -30px; }
+
+
+/* WEIGHT */
+.weight-500 { font-weight: 500; }
