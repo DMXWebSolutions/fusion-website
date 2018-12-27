@@ -41,11 +41,15 @@ $app->get('/', function($request, $response) {
 })->setName('home');
 
 $app->get('/about', function($request, $response) {
-    return $this->view->render($response, 'about.mobile.twig');
+    return $this->view->render($response, 'about.mobile.twig', [
+        'pageTitle' => 'Sobre',
+    ]);
 })->setName('about');
 
 $app->get('/services', function($request, $response) {
-    return $this->view->render($response, 'services.mobile.twig');
+    return $this->view->render($response, 'services.mobile.twig', [
+        'pageTitle' => 'Serviços',
+    ]);
 })->setName('services');
 
 $app->get('/contact', function($request, $response) {

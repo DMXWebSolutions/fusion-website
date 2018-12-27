@@ -1,11 +1,6 @@
 <?php
     return array(
         "servicos" => array(
-            // array(
-            //     "img"       => "alarm.png",
-            //     "title"     => "ALARMES AUTOMOTIVOS",
-            //     "content"   => "",
-            // ),
             array(
                 "img"       => "rastreio.png",
                 "title"     => "RASTREAMENTO DE VEÍCULO",

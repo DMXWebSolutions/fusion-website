@@ -18,10 +18,12 @@
             </button>
         </span>
     </div>
-
-    {% block slide %}
-        
-    {% endblock %}
+    {% if pageTitle == 'Serviços' %}
+        {% include 'layouts/slide2.mobile.twig' %}
+    {% else %}
+        {% include 'layouts/slide.mobile.twig' %}
+    {% endif %}
+    
 </header>                    
 <div id="menu-button" uk-offcanvas>
     <div class="uk-offcanvas-bar" style="background: #555; width: 200px;">
