@@ -27,6 +27,9 @@ $container['view'] = function ($container) {
 $slides = require('app/db/db_slides.php');
 $container['view']['slides'] = $slides;
 
+$slides2 = require('app/db/db_slides2.php');
+$container['view']['slides2'] = $slides2;
+
 /* Rotas que renderizam as páginas que estão em ./resources/views*/
 
 $app->get('/', function($request, $response) {
