@@ -23,10 +23,5 @@
     {% else %}
         {% include 'layouts/slide.mobile.twig' %}
     {% endif %}
-    
 </header>                    
-<div id="menu-button" uk-offcanvas>
-    <div class="uk-offcanvas-bar" style="background: #555; width: 200px;">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-    </div>
-</div>
+{% include 'layouts/sidebar.mobile.twig' %}
