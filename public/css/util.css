@@ -25,8 +25,21 @@
 
 
 /* MARGIN */
+.mt--20 { margin-top: -20px; }
+.mt--5 { margin-top: -5px; }
 .ml--30 { margin-left: -30px; }
 
 
 /* WEIGHT */
-.weight-500 { font-weight: 500; }
+.weight-100{font-weight:100;}
+.weight-200{font-weight:200;}
+.weight-300{font-weight:300;}
+.weight-400{font-weight:400;}
+.weight-500{font-weight:500;}
+.weight-600{font-weight:600;}
+.weight-700{font-weight:700;}
+.weight-800{font-weight:800;}
+
+
+/* FONT-FAMILY */
+.font-raleway{font-family:'Raleway',sans-serif;}
